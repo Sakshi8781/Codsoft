@@ -24,7 +24,7 @@ h2{
     line-height:1.5;
 }
 .navbar {
-    width: 100px;
+    width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -42,10 +42,10 @@ h2{
     color: var(--whiteColor);
 
 }
-.navbar-menu > {
+.navbar-menu  {
     width: 400px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .navbar-menu > a {
     text-decoration: none;
@@ -64,7 +64,7 @@ h2{
 }
 header{
     width:100%;
-    height:500px;
+    height:400px;
     background-image: url('./images/header_img.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -289,4 +289,90 @@ header{
 .job-detail >h1{
     font-size: 36px;
     letter-spacing: 2;
+}
+.featured{
+    width:100%;
+    height: auto;
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: var(--greyColor);
+}
+.section-title{
+    margin-bottom: o.5rem;
+    letter-spacing: 1.5;
+    font-size: 36px;
+}
+.featured-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:2rem;
+    align-items:center;
+    width:100%;
+    padding:2% 10%;
+}
+.featured-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--whiteColor);
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+}
+.featured-card:hover{
+    box-sizing: rgba(100,100,111,0.2)0px 7px 29px 0px;
+}
+.featured-image{
+    height: 30px;
+    margin-bottom: 0.2rem;
+}
+.featured-button{
+    border:1px solid var(--primaryColor);
+    background-color: transparent;
+    margin-top: 0.5rem;
+    padding: 3px 10px;
+    cursor: pointer;
+    color: var(--primaryColor);
+}
+.feayured-button:hover{
+    background-color: var(--primaryColor);
+    color:var(--whiteColor);
+}
+.testimoni{
+    width:100%;
+    text-align:center;
+    padding:5rem,1rem;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+.swiper{
+    width:80%;
+    height: 400px;
+    margin-top: 2rem;
+}
+footer{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    padding: 3rem;
+}
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.footer-wrapper h3,
+.footer-wrapper h4 {
+    line-height: 3;
+    color:var(--yelloColor);
+}
+.social.media a{
+    text-decoration: none;
+    color: var(--greyColor);
+    margin-right: 10px;
 }
