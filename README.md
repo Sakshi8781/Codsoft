@@ -1,2 +1,3 @@
 # Codsoft
-I developed an tribute page and an job board using HTML and CSS and Javascript
+I developed an tribute page and an job board using HTML and CSS.
+
